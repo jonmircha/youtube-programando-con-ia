@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Tareas - My ToDos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="todos-page">
+    <main class="container">
+      <header>
+        <h1>Mis Tareas</h1>
+        <button id="logout-btn">Cerrar Sesión</button>
+      </header>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Nueva tarea..."
+          required
+        />
+        <button type="submit">Agregar</button>
+      </form>
+
+      <ul id="todo-list"></ul>
+      <p id="empty-msg" class="message">No tienes tareas aún.</p>
+    </main>
+
+    <script type="module" src="js/todos.js"></script>
+  </body>
+</html>

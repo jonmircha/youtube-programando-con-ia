@@ -1,0 +1,187 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  color: red;
+}
+
+/* === Estilos para páginas de autenticación (login, register, auth) === */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-page form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.auth-page label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.auth-page input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.auth-page button {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.auth-page button:hover {
+  background-color: #1d4ed8;
+}
+
+.auth-page p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-page hr {
+  margin: 1rem auto;
+}
+
+/* === Estilos para la página de tareas (index.html) === */
+.todos-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+.todos-page .container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.todos-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.todos-page h1 {
+  font-size: 1.75rem;
+}
+
+.todos-page button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.todos-page button:hover {
+  background-color: #1d4ed8;
+}
+
+.todos-page form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.todos-page input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.todos-page #todo-list {
+  list-style: none;
+}
+
+.todos-page .todo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.todos-page .todo-item span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.todos-page .todo-item span.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.todos-page .todo-item button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: #374151;
+}
+
+.todos-page .todo-item button:hover {
+  color: #111827;
+}
+
+.todos-page .message {
+  text-align: center;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 1rem;
+}
