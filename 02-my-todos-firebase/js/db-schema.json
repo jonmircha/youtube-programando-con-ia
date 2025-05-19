@@ -1,0 +1,18 @@
+{
+  "users": {
+    "userId123": {
+      "email": "user@example.com",
+      "created_at": "2025-04-20T15:00:00Z"
+    }
+  },
+  "todos": {
+    "userId123": {
+      "todoId456": {
+        "title": "Estudiar Firebase",
+        "completed": false,
+        "created_at": "2025-04-20T15:05:00Z",
+        "updated_at": "2025-04-20T15:10:00Z"
+      }
+    }
+  }
+}

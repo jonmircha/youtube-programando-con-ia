@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>My ToDos</h1>
+        <button id="logout-btn">Cerrar Sesión</button>
+      </header>
+
+      <main>
+        <form id="task-form">
+          <input
+            type="text"
+            id="title"
+            placeholder="Escribe una tarea..."
+            required
+          />
+          <button type="submit">Agregar</button>
+        </form>
+
+        <section class="filters">
+          <label
+            ><input type="radio" name="filter" value="all" checked />
+            Todas</label
+          >
+          <label
+            ><input type="radio" name="filter" value="active" /> Por
+            hacer</label
+          >
+          <label
+            ><input type="radio" name="filter" value="completed" />
+            Hechas</label
+          >
+        </section>
+
+        <ul id="task-list"></ul>
+      </main>
+    </div>
+    <!-- Firebase -->
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database-compat.js"
+    ></script>
+    <!-- Config & Lógica -->
+    <script type="module" defer src="js/firebase.js"></script>
+    <script type="module" defer src="js/app/index.js"></script>
+  </body>
+</html>

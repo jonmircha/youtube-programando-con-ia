@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "tasks": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+
+        "$taskId": {
+          // Validaciones para crear o actualizar tareas
+          ".validate": "newData.hasChildren(['title', 'completed', 'created_at']) &&
+                        newData.child('title').isString() &&
+                        newData.child('title').val().length > 0 &&
+                        newData.child('completed').isBoolean() &&
+                        newData.child('created_at').isNumber()"
+        }
+      }
+    }
+  }
+}
